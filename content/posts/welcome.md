@@ -1,15 +1,15 @@
 ---
-title: 欢迎来到我的博客
-date: 2026-08-23
+title: 网站简介
+date: 2026-09-19
 category: 随笔
 tags: [随笔, 开始, 博客]
 cover: /assets/images/covers/cover-welcome.svg
-summary: 我的个人博客正式上线啦！这篇文章介绍一下博客的定位，以及我会在这里写些什么。
+summary: 这是网站的简介说明,git开源项目。
 ---
 
-欢迎来到我的个人博客！这是我用 Markdown 写作、一键生成的小站点。
+网站是git开源项目(拾光小站),每一个开源都是伟大的!
 
-## 我为什么要建这个博客
+## 记录
 
 记录是思考的延伸。很多想法转瞬即逝，写下来才能沉淀。这个博客会用来记录：
 
@@ -36,15 +36,12 @@ print(hello("读者"))
 
 ## 关于格式
 
-我支持标准的 Markdown 语法，比如**加粗**、*斜体*、`行内代码`、[链接](https://example.com)、列表和表格：
+我支持标准的 Markdown 语法，比如**加粗**、_斜体_、`行内代码`、[链接](https://example.com)、列表和表格：
 
-| 项目 | 说明 |
-| --- | --- |
+| 项目 | 说明                              |
+| ---- | --------------------------------- |
 | 文章 | 用 Markdown 写在 `content/posts/` |
-| 构建 | 运行 `python build.py` |
-| 预览 | 运行 `python build.py --serve` |
+| 构建 | 运行 `python build.py`            |
+| 预览 | 运行 `python build.py --serve`    |
 
 今天就到这里，期待与你常常见面。
-
-
-
