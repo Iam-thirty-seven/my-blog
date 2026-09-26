@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "拾光小站",
-    "subtitle": "记录思考，分享成长",
+    "title": "三十七的博客",
+    "subtitle": "记录过程，分享感悟",
     "author": "拾光",
-    "description": "一个用 Markdown 写作的个人博客，记录学习、思考与生活。",
+    "description": "一个Markdown + Python 静态生成的个人博客，记录学习、思考与生活。",
     "url": "https://ludasheng01.is-a.dev",
     "base": "",
     "language": "zh-CN",
     "posts_per_page": 20,
-    "background": "/assets/images/hb-mn.jpg"
+    "background": "/assets/images/mn-bz.jpg"
   },
   "comments": {
     "enabled": true,

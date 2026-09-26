@@ -7,7 +7,7 @@ cover: /assets/images/covers/cover-welcome.svg
 summary: 这是网站的简介说明,git开源项目。
 ---
 
-网站是git开源项目(拾光小站),每一个开源都是伟大的!
+拾光小站是github开源项目,作者-ludasheng01
 
 ## 记录
 
