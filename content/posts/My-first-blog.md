@@ -1,6 +1,6 @@
 ---
 title: 我的第一个博客
-date: 2026-09-19
+date: 2099-09-09
 category: 介绍            # 分类（每篇一个，可选）
 tags: [随笔, 开始, 博客]      # 标签（可多个，可选）
 cover: /assets/images/my-first/Profile-picture.png   # 封面图（可选）

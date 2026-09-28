@@ -4,7 +4,7 @@ date: 2026-09-19
 category: 随笔
 tags: [随笔, 开始, 博客]
 cover: /assets/images/covers/cover-welcome.svg
-summary: 这是网站的简介说明,git开源项目。
+summary: 网站的简介与说明,github开源项目拾光小站,作者-ludasheng01。
 ---
 
 拾光小站是github开源项目,作者-ludasheng01
