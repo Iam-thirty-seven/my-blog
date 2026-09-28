@@ -18,6 +18,55 @@
 <meta property="og:image" content="{{OG_IMAGE}}">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="{{PAGE_URL}}">
+<!-- Aplayer 样式 -->
+<link rel="stylesheet" href="/assets/aplayer/APlayer.min.css">
+<style>
+  .aplayer .aplayer-title {
+    color: #000;
+}
+.aplayer .aplayer-author {
+    color: #000;
+}
+.aplayer .aplayer-list ol li {
+    color: #000;
+}
+</style>
+<!-- 播放器容器，固定在左下角 -->
+<div id="aplayer" style="position: fixed; left: 0; bottom: 0; z-index: 999;"></div>
+
+<!-- Aplayer 核心脚本 -->
+<script src="/assets/aplayer/APlayer.min.js"></script>
+
+<!-- 初始化播放器 -->
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,          // 固定在页面左下角
+    mini: true,           // 迷你模式，不占地方
+    autoplay: false,      // 不自动播放，避免被浏览器拦截
+    theme: '#b7daff',     // 主题色，可按你博客风格改
+    audio: [
+        {
+        name: '多远都要在一起',
+        artist: '邓紫棋',
+        url: '/assets/aplayer/music/多远都要在一起-GEM邓紫棋.mp3',
+        cover: '/assets/aplayer/music-images/多远都要在一起.jpg'
+    },
+    {
+        name: '喜欢你',
+        artist: '邓紫棋',
+        url: '/assets/aplayer/music/喜欢你-GEM-邓紫棋.mp3',
+        cover: '/assets/aplayer/music-images/喜欢你.jpg'
+    },
+    {
+        name: '新的心跳',
+        artist: '邓紫棋',
+        url: '/assets/aplayer/music/新的心跳-邓紫棋.mp3',
+        cover: '/assets/aplayer/music-images/新的心跳.jpg'
+    }
+    ]
+});
+</script>
 <script>
 (function () {
   try {
@@ -28,6 +77,21 @@
     document.documentElement.setAttribute("data-theme", t);
   } catch (e) {}
 })();
+</script>
+<script>
+function showRuntime() {
+    const startDate = new Date("2026-09-19 00:00:00"); // 改成你的建站日期
+    const now = new Date();
+    const diff = now - startDate;
+    const days = Math.floor(diff / (24 * 60 * 60 * 1000));
+    const hours = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+    const minutes = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
+    const seconds = Math.floor((diff % (60 * 1000)) / 1000);
+    document.getElementById("runtime").innerHTML =
+        `${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒`;
+}
+setInterval(showRuntime, 1000);
+showRuntime();
 </script>
 </head>
 <body>
@@ -76,6 +140,13 @@
       </footer>
     </div>
 </aside>
+
+<div class="site-music">
+  <div>
+
+  </div>
+
+</div>
 <main class="wrap main">
 {{PAGE_CONTENT}}
 </main>
@@ -83,16 +154,19 @@
 <footer class="site-footer">
   <div class="wrap">
     <p>© {{YEAR}} {{AUTHOR}} · <a href="{{BASE}}/rss.xml">RSS 订阅</a> {{BUSUANZI_SITE}}</p>
+    <!-- 运行时间 -->
+    <p class="time">本站已稳定运行：<span id="runtime">加载中...</span></p>
+
   </div>
 </footer>
-<button type="button" class="back-to-top" aria-label="回到顶部">
+<!-- <button type="button" class="back-to-top" aria-label="回到顶部">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <span>顶部</span>
 </button>
 <button type="button" class="back-to-bottom" aria-label="返回底部">
   <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
   <span>底部</span>
-</button>
+</button> -->
 <script>
 (function () {
   var topBtn = document.querySelector(".back-to-top");

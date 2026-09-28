@@ -80,7 +80,7 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 img { max-width: 100%; height: auto; }
 .wrap { max-width: 780px; margin: 0 auto; padding: 0 20px; }
-
+.wrap .time{display: flex;  justify-content: flex-end;}
 /* ===== 顶栏 ===== */
 .site-header {
   position: sticky;
