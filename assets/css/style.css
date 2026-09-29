@@ -843,6 +843,10 @@ aside.category {
   width: 280px;
   z-index: 100;
 }
+/* 后加隐藏hidden */
+.hidden {
+    display: none !important;
+}
 /* 移动端：下拉菜单改为点击展开（放在末尾以覆盖基础样式） */
 @media (max-width: 700px) {
   .nav-dropdown-menu { display: none; position: static; min-width: 0; box-shadow: none; padding: 4px 0 4px 10px; }
